@@ -97,11 +97,11 @@
   <a-scene id="scene">
     <!-- Assets -->
     <a-assets>
-      <img id="image1" src="https://i.imgur.com/1.png">
-      <img id="image2" src="https://i.imgur.com/2.png">
-      <img id="image3" src="https://i.imgur.com/3.png">
-      <img id="image4" src="https://i.imgur.com/4.png">
-      <img id="image5" src="https://i.imgur.com/5.png">
+      <img id="image1" src="https://i.imgur.com/l3NoEhR_d.webp?maxwidth=520&shape=thumb&fidelity=high" crossorigin="anonymous">
+      <img id="image2" src="https://i.imgur.com/2.png" crossorigin="anonymous">
+      <img id="image3" src="https://i.imgur.com/3.png" crossorigin="anonymous">
+      <img id="image4" src="https://i.imgur.com/4.png" crossorigin="anonymous">
+      <img id="image5" src="https://i.imgur.com/5.png" crossorigin="anonymous">
     </a-assets>
 
     <!-- Camera and Controls -->
@@ -120,7 +120,7 @@
     <!-- Milestone 1 -->
     <a-entity>
       <a-box position="1 2 -2" width="3.4" height="2.4" depth="0.1" color="#FF6347"></a-box>
-      <a-image src="#image1" position="1 2 -2.05" width="3" height="2"></a-image>
+      <a-image src="#image1" position="1 2 -1.9" width="3" height="2"></a-image>
       <a-plane position="1 1.4 -2.1" width="3.2" height="0.5" color="#FFD700" opacity="0.8"></a-plane>
       <a-text value="1969: ARPANET" align="center" width="2.8" position="1 1.4 -2.1" color="#000000"></a-text>
       <a-plane position="1 0.5 -2.1" width="3.2" height="1" color="#FFD700" opacity="0.8"></a-plane>
@@ -130,7 +130,7 @@
     <!-- Milestone 2 -->
     <a-entity>
       <a-box position="1 2 -6" width="3.4" height="2.4" depth="0.1" color="#FF6347"></a-box>
-      <a-image src="#image2" position="1 2 -6.05" width="3" height="2"></a-image>
+      <a-image src="#image2" position="1 2 -5.9" width="3" height="2"></a-image>
       <a-plane position="1 1.4 -6.1" width="3.2" height="0.5" color="#FFD700" opacity="0.8"></a-plane>
       <a-text value="1983: TCP/IP" align="center" width="2.8" position="1 1.4 -6.1" color="#000000"></a-text>
       <a-plane position="1 0.5 -6.1" width="3.2" height="1" color="#FFD700" opacity="0.8"></a-plane>
@@ -140,7 +140,7 @@
     <!-- Milestone 3 -->
     <a-entity>
       <a-box position="1 2 -10" width="3.4" height="2.4" depth="0.1" color="#FF6347"></a-box>
-      <a-image src="#image3" position="1 2 -10.05" width="3" height="2"></a-image>
+      <a-image src="#image3" position="1 2 -9.9" width="3" height="2"></a-image>
       <a-plane position="1 1.4 -10.1" width="3.2" height="0.5" color="#FFD700" opacity="0.8"></a-plane>
       <a-text value="1991: World Wide Web" align="center" width="2.8" position="1 1.4 -10.1" color="#000000"></a-text>
       <a-plane position="1 0.5 -10.1" width="3.2" height="1" color="#FFD700" opacity="0.8"></a-plane>
@@ -150,7 +150,7 @@
     <!-- Milestone 4 -->
     <a-entity>
       <a-box position="1 2 -14" width="3.4" height="2.4" depth="0.1" color="#FF6347"></a-box>
-      <a-image src="#image4" position="1 2 -14.05" width="3" height="2"></a-image>
+      <a-image src="#image4" position="1 2 -13.9" width="3" height="2"></a-image>
       <a-plane position="1 1.4 -14.1" width="3.2" height="0.5" color="#FFD700" opacity="0.8"></a-plane>
       <a-text value="2004: Web 2.0" align="center" width="2.8" position="1 1.4 -14.1" color="#000000"></a-text>
       <a-plane position="1 0.5 -14.1" width="3.2" height="1" color="#FFD700" opacity="0.8"></a-plane>
@@ -160,7 +160,7 @@
     <!-- Milestone 5 -->
     <a-entity>
       <a-box position="1 2 -18" width="3.4" height="2.4" depth="0.1" color="#FF6347"></a-box>
-      <a-image src="#image5" position="1 2 -18.05" width="3" height="2"></a-image>
+      <a-image src="#image5" position="1 2 -17.9" width="3" height="2"></a-image>
       <a-plane position="1 1.4 -18.1" width="3.2" height="0.5" color="#FFD700" opacity="0.8"></a-plane>
       <a-text value="2021: Metaverse" align="center" width="2.8" position="1 1.4 -18.1" color="#000000"></a-text>
       <a-plane position="1 0.5 -18.1" width="3.2" height="1" color="#FFD700" opacity="0.8"></a-plane>
@@ -195,6 +195,12 @@
 
       // Show a random joke every 3 seconds
       setInterval(showRandomJoke, 3000);
+
+      // Set a timeout to hide the loading screen after a certain period (5 seconds)
+      setTimeout(() => {
+        loading.style.display = 'none';
+        scene.style.display = 'block';
+      }, 5000);
     };
 
     function startExperience() {
