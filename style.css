@@ -1,4 +1,98 @@
-html {
+body, html {
+  margin: 0;
+  padding: 0;
   height: 100%;
   width: 100%;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f0f0f0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+}
+
+#loading, #start {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  background-color: #FFFFFF;
+  z-index: 10;
+  flex-direction: column;
+  transition: opacity 0.5s;
+}
+
+#start {
+  z-index: 20;
+  background: linear-gradient(135deg, #ff6347, #ffd700);
+  color: #fff;
+  text-align: center;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+}
+
+#start button {
+  margin-top: 20px;
+  padding: 10px 20px;
+  font-size: 18px;
+  cursor: pointer;
+  background-color: #333;
+  color: #FFF;
+  border: none;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+}
+
+#start button:hover {
+  background-color: #555;
+}
+
+#loading {
+  display: none;
+  flex-direction: column;
+}
+
+#joke {
+  margin-top: 20px;
+  font-size: 16px;
+  color: #333;
+}
+
+.spinner {
+  margin-top: 20px;
+  border: 4px solid #f3f3f3;
+  border-top: 4px solid #3498db;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+a-scene {
+  width: 100%;
+  height: 100%;
+  display: none;
+}
+
+.milestone {
+  animation: fadeInUp 1s ease-out;
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translate3d(0, 20px, 0);
+  }
+  to {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+  }
 }
