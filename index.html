@@ -30,8 +30,9 @@
       z-index: 10;
     }
     #start {
-      display: none;
+      display: flex;
       flex-direction: column;
+      z-index: 20;
     }
     #start button {
       margin-top: 20px;
@@ -43,25 +44,38 @@
       border: none;
       border-radius: 5px;
     }
+    #loading {
+      display: none;
+    }
     a-scene {
       width: 100%;
       height: 100%;
+      display: none;
     }
   </style>
 </head>
 <body>
-  <div id="loading">
-    <h1>Loading...</h1>
-  </div>
   <div id="start">
     <h1>History of the Internet Gallery</h1>
     <p>Made by Zigao Wang</p>
     <button onclick="startExperience()">Start</button>
   </div>
+  <div id="loading">
+    <h1>Loading...</h1>
+  </div>
 
-  <a-scene>
+  <a-scene id="scene">
+    <!-- Assets -->
+    <a-assets>
+      <img id="image1" src="https://assets.zigao.wang/img/CleanShot%202024-07-26%20at%2018.28.16@2x.png">
+      <img id="image2" src="https://via.placeholder.com/300x200.png?text=1983%3A+TCP%2FIP">
+      <img id="image3" src="https://via.placeholder.com/300x200.png?text=1991%3A+World+Wide+Web">
+      <img id="image4" src="https://via.placeholder.com/300x200.png?text=2004%3A+Web+2.0">
+      <img id="image5" src="https://via.placeholder.com/300x200.png?text=2021%3A+Metaverse">
+    </a-assets>
+
     <!-- Camera and Controls -->
-    <a-entity camera look-controls wasd-controls position="1 1.6 -4"></a-entity>
+    <a-entity camera look-controls wasd-controls position="1 1.6 4"></a-entity>
     
     <!-- Corridor Walls -->
     <a-box position="-1 1.5 -10" width="0.1" height="3" depth="20" color="#FFFFFF"></a-box>
@@ -76,7 +90,7 @@
     <!-- Milestone 1 -->
     <a-entity>
       <a-box position="1 2 -2" width="3.4" height="2.4" depth="0.1" color="#FF6347"></a-box>
-      <a-image src="https://via.placeholder.com/300x200.png?text=1969%3A+ARPANET" position="1 2 -2.05" width="3" height="2"></a-image>
+      <a-image src="#image1" position="1 2 -2.05" width="3" height="2"></a-image>
       <a-plane position="1 1.4 -2.1" width="3.2" height="0.5" color="#FFD700" opacity="0.8"></a-plane>
       <a-text value="1969: ARPANET" align="center" width="2.8" position="1 1.4 -2.1" color="#000000"></a-text>
       <a-plane position="1 0.5 -2.1" width="3.2" height="1" color="#FFD700" opacity="0.8"></a-plane>
@@ -86,7 +100,7 @@
     <!-- Milestone 2 -->
     <a-entity>
       <a-box position="1 2 -6" width="3.4" height="2.4" depth="0.1" color="#FF6347"></a-box>
-      <a-image src="https://via.placeholder.com/300x200.png?text=1983%3A+TCP%2FIP" position="1 2 -6.05" width="3" height="2"></a-image>
+      <a-image src="#image2" position="1 2 -6.05" width="3" height="2"></a-image>
       <a-plane position="1 1.4 -6.1" width="3.2" height="0.5" color="#FFD700" opacity="0.8"></a-plane>
       <a-text value="1983: TCP/IP" align="center" width="2.8" position="1 1.4 -6.1" color="#000000"></a-text>
       <a-plane position="1 0.5 -6.1" width="3.2" height="1" color="#FFD700" opacity="0.8"></a-plane>
@@ -96,7 +110,7 @@
     <!-- Milestone 3 -->
     <a-entity>
       <a-box position="1 2 -10" width="3.4" height="2.4" depth="0.1" color="#FF6347"></a-box>
-      <a-image src="https://via.placeholder.com/300x200.png?text=1991%3A+World+Wide+Web" position="1 2 -10.05" width="3" height="2"></a-image>
+      <a-image src="#image3" position="1 2 -10.05" width="3" height="2"></a-image>
       <a-plane position="1 1.4 -10.1" width="3.2" height="0.5" color="#FFD700" opacity="0.8"></a-plane>
       <a-text value="1991: World Wide Web" align="center" width="2.8" position="1 1.4 -10.1" color="#000000"></a-text>
       <a-plane position="1 0.5 -10.1" width="3.2" height="1" color="#FFD700" opacity="0.8"></a-plane>
@@ -106,7 +120,7 @@
     <!-- Milestone 4 -->
     <a-entity>
       <a-box position="1 2 -14" width="3.4" height="2.4" depth="0.1" color="#FF6347"></a-box>
-      <a-image src="https://via.placeholder.com/300x200.png?text=2004%3A+Web+2.0" position="1 2 -14.05" width="3" height="2"></a-image>
+      <a-image src="#image4" position="1 2 -14.05" width="3" height="2"></a-image>
       <a-plane position="1 1.4 -14.1" width="3.2" height="0.5" color="#FFD700" opacity="0.8"></a-plane>
       <a-text value="2004: Web 2.0" align="center" width="2.8" position="1 1.4 -14.1" color="#000000"></a-text>
       <a-plane position="1 0.5 -14.1" width="3.2" height="1" color="#FFD700" opacity="0.8"></a-plane>
@@ -116,7 +130,7 @@
     <!-- Milestone 5 -->
     <a-entity>
       <a-box position="1 2 -18" width="3.4" height="2.4" depth="0.1" color="#FF6347"></a-box>
-      <a-image src="https://via.placeholder.com/300x200.png?text=2021%3A+Metaverse" position="1 2 -18.05" width="3" height="2"></a-image>
+      <a-image src="#image5" position="1 2 -18.05" width="3" height="2"></a-image>
       <a-plane position="1 1.4 -18.1" width="3.2" height="0.5" color="#FFD700" opacity="0.8"></a-plane>
       <a-text value="2021: Metaverse" align="center" width="2.8" position="1 1.4 -18.1" color="#000000"></a-text>
       <a-plane position="1 0.5 -18.1" width="3.2" height="1" color="#FFD700" opacity="0.8"></a-plane>
@@ -126,12 +140,18 @@
 
   <script>
     window.onload = function() {
-      document.getElementById('loading').style.display = 'none';
-      document.getElementById('start').style.display = 'flex';
+      // Preload the scene
+      const scene = document.getElementById('scene');
+      const loading = document.getElementById('loading');
+      scene.addEventListener('loaded', () => {
+        loading.style.display = 'none';
+        scene.style.display = 'block';
+      });
     };
 
     function startExperience() {
       document.getElementById('start').style.display = 'none';
+      document.getElementById('loading').style.display = 'flex';
     }
   </script>
 </body>
