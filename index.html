@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html>
+
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width">
@@ -7,6 +8,7 @@
   <link rel="stylesheet" href="style.css">
   <script src="https://aframe.io/releases/1.6.0/aframe.min.js"></script>
 </head>
+
 <body>
   <div id="start">
     <h1>History of the Internet Gallery</h1>
@@ -31,17 +33,28 @@
       <img id="image7" src="https://i.imgur.com/7.png" crossorigin="anonymous">
       <img id="image8" src="https://i.imgur.com/8.png" crossorigin="anonymous">
       <img id="image9" src="https://i.imgur.com/9.png" crossorigin="anonymous">
+      <img id="image10" src="https://i.imgur.com/10.png" crossorigin="anonymous">
+      <img id="image11" src="https://i.imgur.com/11.png" crossorigin="anonymous">
+      <img id="image12" src="https://i.imgur.com/12.png" crossorigin="anonymous">
+      <img id="image13" src="https://i.imgur.com/13.png" crossorigin="anonymous">
+      <img id="image14" src="https://i.imgur.com/14.png" crossorigin="anonymous">
+      <img id="image15" src="https://i.imgur.com/15.png" crossorigin="anonymous">
+      <img id="image16" src="https://i.imgur.com/16.png" crossorigin="anonymous">
+      <img id="image17" src="https://i.imgur.com/17.png" crossorigin="anonymous">
+      <img id="image18" src="https://i.imgur.com/18.png" crossorigin="anonymous">
+      <img id="image19" src="https://i.imgur.com/19.png" crossorigin="anonymous">
+      <img id="image20" src="https://i.imgur.com/20.png" crossorigin="anonymous">
     </a-assets>
 
     <!-- Camera and Controls -->
     <a-entity camera look-controls wasd-controls position="1 1.6 4"></a-entity>
 
     <!-- Corridor Walls -->
-    <a-box position="-1 1.5 -10" width="0.1" height="3" depth="60" color="#FFFFFF"></a-box>
-    <a-box position="3 1.5 -10" width="0.1" height="3" depth="60" color="#FFFFFF"></a-box>
+    <a-box position="-1 1.5 -10" width="0.1" height="3" depth="120" color="#FFFFFF"></a-box>
+    <a-box position="3 1.5 -10" width="0.1" height="3" depth="120" color="#FFFFFF"></a-box>
 
     <!-- Floor -->
-    <a-plane position="1 0 -10" rotation="-90 0 0" width="4" height="60" color="#ADD8E6"></a-plane>
+    <a-plane position="1 0 -10" rotation="-90 0 0" width="4" height="120" color="#ADD8E6"></a-plane>
 
     <!-- Sky -->
     <a-sky color="#87CEEB"></a-sky>
@@ -49,94 +62,273 @@
     <!-- Milestone 1 -->
     <a-entity class="milestone" position="0 0 -4">
       <a-plane position="1 3.7 0" width="3.4" height="0.7" color="#FFD700" opacity="0.8"></a-plane>
-      <a-text value="1969: ARPANET" align="center" width="3.2" position="1 3.7 0" color="#000000" font="roboto" wrap-count="30" height="0.5"></a-text>
+      <a-text value="1969: ARPANET" align="center" width="3.2" position="1 3.7 0" color="#000000" font="roboto"
+        wrap-count="30" height="0.5"></a-text>
       <a-box position="1 2.3 0" width="3.4" height="2.4" depth="0.1" color="#FF6347"></a-box>
       <a-image src="#image1" position="1 2.3 0.1" width="3" height="2"></a-image>
       <a-plane position="1 0.5 0" width="3.2" height="1" color="#FFD700" opacity="0.8"></a-plane>
-      <a-text value="The Advanced Research Projects Agency Network (ARPANET) was the first network to implement the protocol suite TCP/IP." align="center" width="2.8" position="1 0.5 0" color="#000000" font="roboto" wrap-count="30" height="0.5"></a-text>
+      <a-text
+        value="The Advanced Research Projects Agency Network (ARPANET) was the first network to implement the protocol suite TCP/IP."
+        align="center" width="2.8" position="1 0.5 0" color="#000000" font="roboto" wrap-count="30"
+        height="0.5"></a-text>
     </a-entity>
 
     <!-- Milestone 2 -->
     <a-entity class="milestone" position="0 0 -10">
       <a-plane position="1 3.7 0" width="3.4" height="0.7" color="#FFD700" opacity="0.8"></a-plane>
-      <a-text value="1971: Email" align="center" width="3.2" position="1 3.7 0" color="#000000" font="roboto" wrap-count="30" height="0.5"></a-text>
+      <a-text value="1971: Email" align="center" width="3.2" position="1 3.7 0" color="#000000" font="roboto"
+        wrap-count="30" height="0.5"></a-text>
       <a-box position="1 2.3 0" width="3.4" height="2.4" depth="0.1" color="#FF6347"></a-box>
       <a-image src="#image2" position="1 2.3 0.1" width="3" height="2"></a-image>
       <a-plane position="1 0.5 0" width="3.2" height="1" color="#FFD700" opacity="0.8"></a-plane>
-      <a-text value="Ray Tomlinson sent the first email on ARPANET, introducing the use of the '@' symbol to denote email addresses." align="center" width="2.8" position="1 0.5 0" color="#000000" font="roboto" wrap-count="30" height="0.5"></a-text>
+      <a-text
+        value="Ray Tomlinson sent the first email on ARPANET, introducing the use of the '@' symbol to denote email addresses."
+        align="center" width="2.8" position="1 0.5 0" color="#000000" font="roboto" wrap-count="30"
+        height="0.5"></a-text>
     </a-entity>
 
     <!-- Milestone 3 -->
     <a-entity class="milestone" position="0 0 -16">
       <a-plane position="1 3.7 0" width="3.4" height="0.7" color="#FFD700" opacity="0.8"></a-plane>
-      <a-text value="1983: TCP/IP" align="center" width="3.2" position="1 3.7 0" color="#000000" font="roboto" wrap-count="30" height="0.5"></a-text>
+      <a-text value="1983: TCP/IP" align="center" width="3.2" position="1 3.7 0" color="#000000" font="roboto"
+        wrap-count="30" height="0.5"></a-text>
       <a-box position="1 2.3 0" width="3.4" height="2.4" depth="0.1" color="#FF6347"></a-box>
       <a-image src="#image3" position="1 2.3 0.1" width="3" height="2"></a-image>
       <a-plane position="1 0.5 0" width="3.2" height="1" color="#FFD700" opacity="0.8"></a-plane>
-      <a-text value="The Internet protocol suite (TCP/IP) was standardized, creating the foundation for modern internet communication." align="center" width="2.8" position="1 0.5 0" color="#000000" font="roboto" wrap-count="30" height="0.5"></a-text>
+      <a-text
+        value="The Internet protocol suite (TCP/IP) was standardized, creating the foundation for modern internet communication."
+        align="center" width="2.8" position="1 0.5 0" color="#000000" font="roboto" wrap-count="30"
+        height="0.5"></a-text>
     </a-entity>
 
     <!-- Milestone 4 -->
     <a-entity class="milestone" position="0 0 -22">
       <a-plane position="1 3.7 0" width="3.4" height="0.7" color="#FFD700" opacity="0.8"></a-plane>
-      <a-text value="1991: World Wide Web" align="center" width="3.2" position="1 3.7 0" color="#000000" font="roboto" wrap-count="30" height="0.5"></a-text>
+      <a-text value="1989: World Wide Web Proposal" align="center" width="3.2" position="1 3.7 0" color="#000000"
+        font="roboto" wrap-count="30" height="0.5"></a-text>
       <a-box position="1 2.3 0" width="3.4" height="2.4" depth="0.1" color="#FF6347"></a-box>
       <a-image src="#image4" position="1 2.3 0.1" width="3" height="2"></a-image>
       <a-plane position="1 0.5 0" width="3.2" height="1" color="#FFD700" opacity="0.8"></a-plane>
-      <a-text value="Tim Berners-Lee introduced the World Wide Web, an Internet-based hypermedia initiative for global information sharing." align="center" width="2.8" position="1 0.5 0" color="#000000" font="roboto" wrap-count="30" height="0.5"></a-text>
+      <a-text value="Tim Berners-Lee proposed the World Wide Web, an information system using hypertext links."
+        align="center" width="2.8" position="1 0.5 0" color="#000000" font="roboto" wrap-count="30"
+        height="0.5"></a-text>
     </a-entity>
 
     <!-- Milestone 5 -->
     <a-entity class="milestone" position="0 0 -28">
       <a-plane position="1 3.7 0" width="3.4" height="0.7" color="#FFD700" opacity="0.8"></a-plane>
-      <a-text value="1998: Google" align="center" width="3.2" position="1 3.7 0" color="#000000" font="roboto" wrap-count="30" height="0.5"></a-text>
+      <a-text value="1991: World Wide Web" align="center" width="3.2" position="1 3.7 0" color="#000000" font="roboto"
+        wrap-count="30" height="0.5"></a-text>
       <a-box position="1 2.3 0" width="3.4" height="2.4" depth="0.1" color="#FF6347"></a-box>
       <a-image src="#image5" position="1 2.3 0.1" width="3" height="2"></a-image>
       <a-plane position="1 0.5 0" width="3.2" height="1" color="#FFD700" opacity="0.8"></a-plane>
-      <a-text value="Google was founded by Larry Page and Sergey Brin, revolutionizing the way people search for information online." align="center" width="2.8" position="1 0.5 0" color="#000000" font="roboto" wrap-count="30" height="0.5"></a-text>
+      <a-text
+        value="Tim Berners-Lee introduced the World Wide Web, an Internet-based hypermedia initiative for global information sharing."
+        align="center" width="2.8" position="1 0.5 0" color="#000000" font="roboto" wrap-count="30"
+        height="0.5"></a-text>
     </a-entity>
 
     <!-- Milestone 6 -->
     <a-entity class="milestone" position="0 0 -34">
       <a-plane position="1 3.7 0" width="3.4" height="0.7" color="#FFD700" opacity="0.8"></a-plane>
-      <a-text value="2004: Web 2.0" align="center" width="3.2" position="1 3.7 0" color="#000000" font="roboto" wrap-count="30" height="0.5"></a-text>
+      <a-text value="1993: Mosaic Browser" align="center" width="3.2" position="1 3.7 0" color="#000000" font="roboto"
+        wrap-count="30" height="0.5"></a-text>
       <a-box position="1 2.3 0" width="3.4" height="2.4" depth="0.1" color="#FF6347"></a-box>
       <a-image src="#image6" position="1 2.3 0.1" width="3" height="2"></a-image>
       <a-plane position="1 0.5 0" width="3.2" height="1" color="#FFD700" opacity="0.8"></a-plane>
-      <a-text value="The term 'Web 2.0' was popularized, referring to the transition from static web pages to dynamic and user-generated content." align="center" width="2.8" position="1 0.5 0" color="#000000" font="roboto" wrap-count="30" height="0.5"></a-text>
+      <a-text
+        value="Mosaic, the first graphical web browser, was released, making the World Wide Web more accessible to the general public."
+        align="center" width="2.8" position="1 0.5 0" color="#000000" font="roboto" wrap-count="30"
+        height="0.5"></a-text>
     </a-entity>
 
     <!-- Milestone 7 -->
     <a-entity class="milestone" position="0 0 -40">
       <a-plane position="1 3.7 0" width="3.4" height="0.7" color="#FFD700" opacity="0.8"></a-plane>
-      <a-text value="2010: Mobile Internet" align="center" width="3.2" position="1 3.7 0" color="#000000" font="roboto" wrap-count="30" height="0.5"></a-text>
+      <a-text value="1994: Netscape Navigator" align="center" width="3.2" position="1 3.7 0" color="#000000"
+        font="roboto" wrap-count="30" height="0.5"></a-text>
       <a-box position="1 2.3 0" width="3.4" height="2.4" depth="0.1" color="#FF6347"></a-box>
       <a-image src="#image7" position="1 2.3 0.1" width="3" height="2"></a-image>
       <a-plane position="1 0.5 0" width="3.2" height="1" color="#FFD700" opacity="0.8"></a-plane>
-      <a-text value="The rise of smartphones and mobile apps revolutionized how people access and use the internet." align="center" width="2.8" position="1 0.5 0" color="#000000" font="roboto" wrap-count="30" height="0.5"></a-text>
+      <a-text value="Netscape Navigator was introduced, becoming the dominant web browser of the mid-1990s."
+        align="center" width="2.8" position="1 0.5 0" color="#000000" font="roboto" wrap-count="30"
+        height="0.5"></a-text>
     </a-entity>
 
     <!-- Milestone 8 -->
     <a-entity class="milestone" position="0 0 -46">
       <a-plane position="1 3.7 0" width="3.4" height="0.7" color="#FFD700" opacity="0.8"></a-plane>
-      <a-text value="2021: Metaverse" align="center" width="3.2" position="1 3.7 0" color="#000000" font="roboto" wrap-count="30" height="0.5"></a-text>
+      <a-text value="1995: Amazon and eBay" align="center" width="3.2" position="1 3.7 0" color="#000000" font="roboto"
+        wrap-count="30" height="0.5"></a-text>
       <a-box position="1 2.3 0" width="3.4" height="2.4" depth="0.1" color="#FF6347"></a-box>
       <a-image src="#image8" position="1 2.3 0.1" width="3" height="2"></a-image>
       <a-plane position="1 0.5 0" width="3.2" height="1" color="#FFD700" opacity="0.8"></a-plane>
-      <a-text value="The concept of the Metaverse gained traction, envisioning a collective virtual shared space, created by the convergence of virtually enhanced physical reality and physically persistent virtual space." align="center" width="2.8" position="1 0.5 0" color="#000000" font="roboto" wrap-count="30" height="0.5"></a-text>
+      <a-text value="Amazon and eBay were founded, laying the foundation for the future of e-commerce." align="center"
+        width="2.8" position="1 0.5 0" color="#000000" font="roboto" wrap-count="30" height="0.5"></a-text>
     </a-entity>
 
     <!-- Milestone 9 -->
     <a-entity class="milestone" position="0 0 -52">
       <a-plane position="1 3.7 0" width="3.4" height="0.7" color="#FFD700" opacity="0.8"></a-plane>
-      <a-text value="Future: The Internet Continues" align="center" width="3.2" position="1 3.7 0" color="#000000" font="roboto" wrap-count="30" height="0.5"></a-text>
+      <a-text value="1998: Google" align="center" width="3.2" position="1 3.7 0" color="#000000" font="roboto"
+        wrap-count="30" height="0.5"></a-text>
       <a-box position="1 2.3 0" width="3.4" height="2.4" depth="0.1" color="#FF6347"></a-box>
       <a-image src="#image9" position="1 2.3 0.1" width="3" height="2"></a-image>
       <a-plane position="1 0.5 0" width="3.2" height="1" color="#FFD700" opacity="0.8"></a-plane>
-      <a-text value="The internet continues to evolve, with new technologies and innovations shaping the future." align="center" width="2.8" position="1 0.5 0" color="#000000" font="roboto" wrap-count="30" height="0.5"></a-text>
+      <a-text
+        value="Google was founded by Larry Page and Sergey Brin, revolutionizing the way people search for information online."
+        align="center" width="2.8" position="1 0.5 0" color="#000000" font="roboto" wrap-count="30"
+        height="0.5"></a-text>
+    </a-entity>
+
+    <!-- Milestone 10 -->
+    <a-entity class="milestone" position="0 0 -58">
+      <a-plane position="1 3.7 0" width="3.4" height="0.7" color="#FFD700" opacity="0.8"></a-plane>
+      <a-text value="2001: Wikipedia" align="center" width="3.2" position="1 3.7 0" color="#000000" font="roboto"
+        wrap-count="30" height="0.5"></a-text>
+      <a-box position="1 2.3 0" width="3.4" height="2.4" depth="0.1" color="#FF6347"></a-box>
+      <a-image src="#image10" position="1 2.3 0.1" width="3" height="2"></a-image>
+      <a-plane position="1 0.5 0" width="3.2" height="1" color="#FFD700" opacity="0.8"></a-plane>
+      <a-text
+        value="Wikipedia was launched, becoming the largest and most popular general reference work on the internet."
+        align="center" width="2.8" position="1 0.5 0" color="#000000" font="roboto" wrap-count="30"
+        height="0.5"></a-text>
+    </a-entity>
+
+    <!-- Milestone 11 -->
+    <a-entity class="milestone" position="0 0 -64">
+      <a-plane position="1 3.7 0" width="3.4" height="0.7" color="#FFD700" opacity="0.8"></a-plane>
+      <a-text value="2003: MySpace" align="center" width="3.2" position="1 3.7 0" color="#000000" font="roboto"
+        wrap-count="30" height="0.5"></a-text>
+      <a-box position="1 2.3 0" width="3.4" height="2.4" depth="0.1" color="#<a-box position=" 1 2.3 0" width="3.4"
+        height="2.4" depth="0.1" color="#FF6347"></a-box>
+      <a-image src="#image11" position="1 2.3 0.1" width="3" height="2"></a-image>
+      <a-plane position="1 0.5 0" width="3.2" height="1" color="#FFD700" opacity="0.8"></a-plane>
+      <a-text value="MySpace was launched, becoming the largest social networking site in the world from 2005 to 2008."
+        align="center" width="2.8" position="1 0.5 0" color="#000000" font="roboto" wrap-count="30"
+        height="0.5"></a-text>
+    </a-entity>
+
+    <!-- Milestone 12 -->
+    <a-entity class="milestone" position="0 0 -70">
+      <a-plane position="1 3.7 0" width="3.4" height="0.7" color="#FFD700" opacity="0.8"></a-plane>
+      <a-text value="2004: Facebook" align="center" width="3.2" position="1 3.7 0" color="#000000" font="roboto"
+        wrap-count="30" height="0.5"></a-text>
+      <a-box position="1 2.3 0" width="3.4" height="2.4" depth="0.1" color="#FF6347"></a-box>
+      <a-image src="#image12" position="1 2.3 0.1" width="3" height="2"></a-image>
+      <a-plane position="1 0.5 0" width="3.2" height="1" color="#FFD700" opacity="0.8"></a-plane>
+      <a-text value="Facebook was founded by Mark Zuckerberg, changing the landscape of social networking."
+        align="center" width="2.8" position="1 0.5 0" color="#000000" font="roboto" wrap-count="30"
+        height="0.5"></a-text>
+    </a-entity>
+
+    <!-- Milestone 13 -->
+    <a-entity class="milestone" position="0 0 -76">
+      <a-plane position="1 3.7 0" width="3.4" height="0.7" color="#FFD700" opacity="0.8"></a-plane>
+      <a-text value="2005: YouTube" align="center" width="3.2" position="1 3.7 0" color="#000000" font="roboto"
+        wrap-count="30" height="0.5"></a-text>
+      <a-box position="1 2.3 0" width="3.4" height="2.4" depth="0.1" color="#FF6347"></a-box>
+      <a-image src="#image13" position="1 2.3 0.1" width="3" height="2"></a-image>
+      <a-plane position="1 0.5 0" width="3.2" height="1" color="#FFD700" opacity="0.8"></a-plane>
+      <a-text value="YouTube was founded, revolutionizing video sharing and consumption on the internet." align="center"
+        width="2.8" position="1 0.5 0" color="#000000" font="roboto" wrap-count="30" height="0.5"></a-text>
+    </a-entity>
+
+    <!-- Milestone 14 -->
+    <a-entity class="milestone" position="0 0 -82">
+      <a-plane position="1 3.7 0" width="3.4" height="0.7" color="#FFD700" opacity="0.8"></a-plane>
+      <a-text value="2006: Twitter" align="center" width="3.2" position="1 3.7 0" color="#000000" font="roboto"
+        wrap-count="30" height="0.5"></a-text>
+      <a-box position="1 2.3 0" width="3.4" height="2.4" depth="0.1" color="#FF6347"></a-box>
+      <a-image src="#image14" position="1 2.3 0.1" width="3" height="2"></a-image>
+      <a-plane position="1 0.5 0" width="3.2" height="1" color="#FFD700" opacity="0.8"></a-plane>
+      <a-text value="Twitter was launched, introducing the concept of microblogging with its 140-character limit."
+        align="center" width="2.8" position="1 0.5 0" color="#000000" font="roboto" wrap-count="30"
+        height="0.5"></a-text>
+    </a-entity>
+
+    <!-- Milestone 15 -->
+    <a-entity class="milestone" position="0 0 -88">
+      <a-plane position="1 3.7 0" width="3.4" height="0.7" color="#FFD700" opacity="0.8"></a-plane>
+      <a-text value="2007: iPhone" align="center" width="3.2" position="1 3.7 0" color="#000000" font="roboto"
+        wrap-count="30" height="0.5"></a-text>
+      <a-box position="1 2.3 0" width="3.4" height="2.4" depth="0.1" color="#FF6347"></a-box>
+      <a-image src="#image15" position="1 2.3 0.1" width="3" height="2"></a-image>
+      <a-plane position="1 0.5 0" width="3.2" height="1" color="#FFD700" opacity="0.8"></a-plane>
+      <a-text
+        value="Apple released the first iPhone, revolutionizing mobile internet usage with its touch interface and app ecosystem."
+        align="center" width="2.8" position="1 0.5 0" color="#000000" font="roboto" wrap-count="30"
+        height="0.5"></a-text>
+    </a-entity>
+
+    <!-- Milestone 16 -->
+    <a-entity class="milestone" position="0 0 -94">
+      <a-plane position="1 3.7 0" width="3.4" height="0.7" color="#FFD700" opacity="0.8"></a-plane>
+      <a-text value="2008: Google Chrome" align="center" width="3.2" position="1 3.7 0" color="#000000" font="roboto"
+        wrap-count="30" height="0.5"></a-text>
+      <a-box position="1 2.3 0" width="3.4" height="2.4" depth="0.1" color="#FF6347"></a-box>
+      <a-image src="#image16" position="1 2.3 0.1" width="3" height="2"></a-image>
+      <a-plane position="1 0.5 0" width="3.2" height="1" color="#FFD700" opacity="0.8"></a-plane>
+      <a-text value="Google launched Chrome, a web browser that focused on speed, stability, and security."
+        align="center" width="2.8" position="1 0.5 0" color="#000000" font="roboto" wrap-count="30"
+        height="0.5"></a-text>
+    </a-entity>
+
+    <!-- Milestone 17 -->
+    <a-entity class="milestone" position="0 0 -100">
+      <a-plane position="1 3.7 0" width="3.4" height="0.7" color="#FFD700" opacity="0.8"></a-plane>
+      <a-text value="2010: Mobile Internet" align="center" width="3.2" position="1 3.7 0" color="#000000" font="roboto"
+        wrap-count="30" height="0.5"></a-text>
+      <a-box position="1 2.3 0" width="3.4" height="2.4" depth="0.1" color="#FF6347"></a-box>
+      <a-image src="#image17" position="1 2.3 0.1" width="3" height="2"></a-image>
+      <a-plane position="1 0.5 0" width="3.2" height="1" color="#FFD700" opacity="0.8"></a-plane>
+      <a-text value="The rise of smartphones and mobile apps revolutionized how people access and use the internet."
+        align="center" width="2.8" position="1 0.5 0" color="#000000" font="roboto" wrap-count="30"
+        height="0.5"></a-text>
+    </a-entity>
+
+    <!-- Milestone 18 -->
+    <a-entity class="milestone" position="0 0 -106">
+      <a-plane position="1 3.7 0" width="3.4" height="0.7" color="#FFD700" opacity="0.8"></a-plane>
+      <a-text value="2011: Snapchat" align="center" width="3.2" position="1 3.7 0" color="#000000" font="roboto"
+        wrap-count="30" height="0.5"></a-text>
+      <a-box position="1 2.3 0" width="3.4" height="2.4" depth="0.1" color="#FF6347"></a-box>
+      <a-image src="#image18" position="1 2.3 0.1" width="3" height="2"></a-image>
+      <a-plane position="1 0.5 0" width="3.2" height="1" color="#FFD700" opacity="0.8"></a-plane>
+      <a-text value="Snapchat was launched, introducing the concept of disappearing messages and stories."
+        align="center" width="2.8" position="1 0.5 0" color="#000000" font="roboto" wrap-count="30"
+        height="0.5"></a-text>
+    </a-entity>
+
+    <!-- Milestone 19 -->
+    <a-entity class="milestone" position="0 0 -112">
+      <a-plane position="1 3.7 0" width="3.4" height="0.7" color="#FFD700" opacity="0.8"></a-plane>
+      <a-text value="2016: AI and Chatbots" align="center" width="3.2" position="1 3.7 0" color="#000000" font="roboto"
+        wrap-count="30" height="0.5"></a-text>
+      <a-box position="1 2.3 0" width="3.4" height="2.4" depth="0.1" color="#FF6347"></a-box>
+      <a-image src="#image19" position="1 2.3 0.1" width="3" height="2"></a-image>
+      <a-plane position="1 0.5 0" width="3.2" height="1" color="#FFD700" opacity="0.8"></a-plane>
+      <a-text value="The rise of AI and chatbots started changing user interactions on websites and apps."
+        align="center" width="2.8" position="1 0.5 0" color="#000000" font="roboto" wrap-count="30"
+        height="0.5"></a-text>
+    </a-entity>
+
+    <!-- Milestone 20 -->
+    <a-entity class="milestone" position="0 0 -118">
+      <a-plane position="1 3.7 0" width="3.4" height="0.7" color="#FFD700" opacity="0.8"></a-plane>
+      <a-text value="2021: Metaverse" align="center" width="3.2" position="1 3.7 0" color="#000000" font="roboto"
+        wrap-count="30" height="0.5"></a-text>
+      <a-box position="1 2.3 0" width="3.4" height="2.4" depth="0.1" color="#FF6347"></a-box>
+      <a-image src="#image20" position="1 2.3 0.1" width="3" height="2"></a-image>
+      <a-plane position="1 0.5 0" width="3.2" height="1" color="#FFD700" opacity="0.8"></a-plane>
+      <a-text
+        value="The concept of the Metaverse gained traction, envisioning a collective virtual shared space, created by the convergence of virtually enhanced physical reality and physically persistent virtual space."
+        align="center" width="2.8" position="1 0.5 0" color="#000000" font="roboto" wrap-count="30"
+        height="0.5"></a-text>
     </a-entity>
   </a-scene>
 
   <script src="script.js"></script>
 </body>
+
 </html>
