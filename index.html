@@ -61,7 +61,7 @@
     </a-assets>
 
     <!-- Camera and Controls -->
-    <a-entity camera look-controls wasd-controls position="1 1.6 4"></a-entity>
+    <a-entity twoway-motion="speed: 35" camera look-controls wasd-controls position="1 1.6 4"></a-entity>
 
     <!-- Corridor Walls -->
     <a-box position="-1 1.5 -10" width="0.1" height="3" depth="230" color="#FFFFFF"></a-box>
@@ -342,6 +342,7 @@
   </a-scene>
 
   <script src="script.js"></script>
+  <script src="twoway-motion.js"></script>
 </body>
 
 </html>
