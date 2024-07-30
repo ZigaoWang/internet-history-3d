@@ -2,6 +2,9 @@
 
 Welcome to the **History of the Internet Gallery**, a virtual reality experience built with A-Frame. Explore the milestones that have shaped the internet as we know it today!
 
+![CleanShot 2024-07-30 at 12 13 15](https://github.com/user-attachments/assets/a1c249e9-4c51-4377-ac2e-908c8d9edc41)
+
+
 ## Features
 
 - **Interactive VR Gallery**: Navigate through a virtual corridor showcasing important milestones in the history of the internet.
